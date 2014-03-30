@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jingle_background"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_do_it"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@android:drawable/btn_default"
+        android:onClick="startCollectingData"
+        android:text="@string/start" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="400dip"
+        android:layout_height="100dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_do_it"
+        android:layout_marginTop="16dp"
+        android:textColor="#AA0000"
+        android:textSize="7pt" />
+
+    <Button
+        android:id="@+id/btn_calendar"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/btn_default"
+        android:onClick="startCalendarActivity"
+        android:text="@string/calendar" />
+
+</RelativeLayout>
